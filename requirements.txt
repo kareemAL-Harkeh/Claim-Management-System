@@ -1,0 +1,12 @@
+bcrypt
+celery
+fastapi
+pandas
+passlib
+pydantic
+pydantic_core
+python-jose
+python-multipart
+redis
+SQLAlchemy
+uvicorn0
