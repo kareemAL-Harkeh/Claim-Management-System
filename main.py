@@ -103,8 +103,6 @@ async def get_claims_filter(
     status: str |None= Query(None, description="Filter by claim status"),
     diagnosis_code: str | None= Query(None, description="Filter by diagnosis code"),
     procedure_code: str | None= Query(None, description="Filter by procedure code"),
-    skip: int | None= Query(0, ge=0, description="Number of claims to skip for pagination"),
-    limit: int | None= Query(10, ge=1, le=100, description="Number of claims to return per page"),
     token: str = Depends(oauth_2_scheme),
     db: Session = Depends(get_db)
 ):
@@ -119,7 +117,7 @@ async def get_claims_filter(
     if procedure_code:
         query = query.filter(Claim.procedure_code == procedure_code)
 
-    claims = query.offset(skip).limit(limit).all()
+    claims = query.all()
     return claims
 
 
