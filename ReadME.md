@@ -30,4 +30,3 @@ claims and generate CSV reports of claims grouped by status. The application use
 1. Clone the repository:
    ```bash
    git clone https://github.com/kareemAL-Harkeh/Claim-Management-System.git
-   cd claim-report-generator
