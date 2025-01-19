@@ -29,5 +29,5 @@ claims and generate CSV reports of claims grouped by status. The application use
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/claim-report-generator.git
+   git clone https://github.com/kareemAL-Harkeh/Claim-Management-System.git
    cd claim-report-generator
