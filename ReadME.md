@@ -24,7 +24,7 @@ claims and generate CSV reports of claims grouped by status. The application use
 - Python 3.8 and above
 - Redis server installed and running
 - Required Python packages (see `requirements.txt`)
-- Run 'db.py' file to create the DB
+- Run `db.py` file to create the DB
 
 ### Installation
 1. Clone the repository:
